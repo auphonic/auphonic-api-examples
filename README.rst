@@ -8,8 +8,22 @@ which use the Auphonic API.
 More information about the Auphonic API ca be found at http://auphonic.com/developers .
 
 
-[Auphonic](https://auphonic.com) is an automatic audio post production webservice for podcasts,
+Examples
+--------
+
+Subfolders in the repository represent programming languages with various examples.
+For example: python, shell, etc.
+
+Additional examples and pull requests are very welcome!
+
+
+About Auphonic
+--------------
+
+Auphonic is an automatic audio post production webservice for podcasts,
 screencasts, radio shows, audio books and more.
+
+See http://auphonic.com .
 
 
 2012 by Georg Holzmann (grh _at_ auphonic.com)

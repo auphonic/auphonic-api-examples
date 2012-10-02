@@ -63,8 +63,6 @@ def main():
     for f in files:
         print "- %s" % f
         input_files['input_file'] = open(f, 'r')
-	# NOTE: we set the title to the filename
-        data['title'] = splitext(basename(f))[0]
         requests.post(API_URL, data=data, files=input_files,
                               auth=HTTPBasicAuth(str(username), str(password)))
 
@@ -74,4 +72,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

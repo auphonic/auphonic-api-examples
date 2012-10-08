@@ -12,7 +12,6 @@ Date: Sept 2012
 
 '''
 
-from os.path import splitext, basename
 import sys
 import getpass
 
@@ -57,14 +56,13 @@ def main():
 
     data = {'preset': preset, 'action': 'start', }
     input_files = {}
-    # create a new production with every file from soundcloud
+
+    # iterate through all files and create a new production for each one
     print "\nCreating new productions:"
     print "files", files
     for f in files:
         print "- %s" % f
         input_files['input_file'] = open(f, 'r')
-	# NOTE: we set the title to the filename
-        data['title'] = splitext(basename(f))[0]
         requests.post(API_URL, data=data, files=input_files,
                               auth=HTTPBasicAuth(str(username), str(password)))
 
@@ -74,4 +72,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

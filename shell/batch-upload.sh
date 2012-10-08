@@ -44,8 +44,6 @@ echo
 
 for f in $FILES
 do
-    basename=${f%.*}
-
     echo "Uploading $f"
 
     # auphonic API request
@@ -53,7 +51,6 @@ do
         -u "$username:$password" \
         -F "preset=$preset" \
         -F "action=start" \
-        -F "title=${basename##*/}" \
         -F "input_file=@$f" > /dev/null 2>&1
 done
 

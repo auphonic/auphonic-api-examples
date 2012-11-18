@@ -12,7 +12,7 @@ Examples
 --------
 
 Subfolders in the repository represent programming languages with various examples.
-For example: python, shell, etc.
+For example: python, shell, ...
 
 Additional examples and pull requests are very welcome!
 

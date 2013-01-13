@@ -1,8 +1,8 @@
 <!--
-	Achtung das ist nur ein Minimalbeispiel wie man das mit PHP machen könnte
+	Achtung das ist nur ein Minimalbeispiel wie man das mit PHP machen koennte
 	Autor: Fliiiix https://twitter.com/l33tname, https://github.com/fliiiix/
 	Require: Die php-curl extention
-	Was ist nicht gemacht: Richtiges Error-handling, Schönes Layout
+	Was ist nicht gemacht: Richtiges Error-handling, Schoenes Layout
 	First Steps: $username $password $prestUUID setzen
 
 	Lizenz:

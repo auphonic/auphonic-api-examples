@@ -19,8 +19,9 @@ try:
     import requests
     from requests.auth import HTTPBasicAuth
 
-    if int(requests.__version__.split('.')[1]) < 12:
-        print "You may have to upgrade your python requests version!"
+    if int(requests.__version__.split('.')[0]) < 2:
+        if int(requests.__version__.split('.')[1]) < 12:
+            print "You may have to upgrade your python requests version!"
 
 except:
     print "Please install python requests!"
@@ -62,7 +63,7 @@ def main():
     print "files", files
     for f in files:
         print "- %s" % f
-        input_files['input_file'] = open(f, 'r')
+        input_files['input_file'] = open(f, 'rb')
         requests.post(API_URL, data=data, files=input_files,
                               auth=HTTPBasicAuth(str(username), str(password)))
 

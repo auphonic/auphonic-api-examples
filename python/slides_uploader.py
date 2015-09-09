@@ -10,15 +10,15 @@ production and adds chapters from your_chapters_file.txt.
 All slides in your_slides.pdf will be added as chapter images to the
 production:
 First slide will be converted to an image and added to the first chapter,
-second slide will be added to the second chapter etc.
+second slide will be added as chapter image to the second chapter etc.
 Please edit (add audio file, apply preset, etc.) and start the production in
-our web interface!
+our web interface afterwards!
 
 IMPORTANT:
 You have to install ImageMagic on your system!
 Download it here: http://www.imagemagick.org/
 
-2015, Georg Holzmann (grh@auphonic.com
+2015, Georg Holzmann (grh@auphonic.com)
 
 '''
 
